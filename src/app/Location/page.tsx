@@ -54,9 +54,9 @@ export default function Location() {
 
             {/* Filter and Store Count */}
             <div className="flex items-center justify-between w-full">
-              <p className="text-sm text-gray-700">{stores.length} stores near you</p>
-               variant="outline" className="rounded-full flex items-center gap-2"
-              <span>Filter</span>
+              <p className="text-sm text-black-700">{stores.length} Stores Near You </p>
+         
+  <span>Filter</span>
                 
               
             </div>

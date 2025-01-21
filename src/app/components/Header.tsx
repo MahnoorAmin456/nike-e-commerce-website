@@ -1,13 +1,7 @@
 'use client'
 import Image from "next/image";
 import React, { useState } from "react";
-import topLogo from "@public/images/logo/favicon.svg";
-import logo from "@public/images/logo/logo.svg";
-import wishlistIcon from "@public/images/icons/wishlist.svg";
-import cartIcon from "@public/images/icons/cart.svg";
-import searchIcon from "@public/images/icons/search.svg";
-import menuIcon from "@public/images/icons/menu.svg";
-import crossIcon from "@public/images/icons/cross.svg";
+
 import Link from "next/link";
 
 const Header = () => {
@@ -21,7 +15,7 @@ const Header = () => {
     <div>
       <div className="hidden lg:block">
         <div className="flex justify-between items-center px-10 bg-light-gray">
-          <Image src={topLogo} alt="Top Logo" />
+          <Image src={"/images/logo/favicon.svg"} alt="Top Logo"  width={30} height={30}/>
 
           <ul className="flex space-x-6 py-3">
             <li className="flex items-center border-r border-black pr-6">
@@ -50,7 +44,7 @@ const Header = () => {
         </div>
         <div className="flex px-10 justify-between items-center py-4">
           <Link href="/">
-            <Image src={logo} alt="Logo" />
+            <Image src={"/images/logo/logo.svg"}  width={30} height={30} alt ="logo" />
           </Link>
           <ul className="flex space-x-6">
             <li>
@@ -74,28 +68,28 @@ const Header = () => {
           </ul>
           <div className="flex space-x-6">
             <div className="flex px-4 py-3 rounded-full w-[64%] bg-light-gray">
-              <Image src={searchIcon} alt="search" />
+              <Image src={"/images/icon/search.svg"} alt="search" width={30} height={30}/>
               <input
                 className="pl-4 focus-visible:outline-none w-[64%] bg-light-gray"
                 type="text"
                 placeholder="Search"
               />
             </div>
-            <Image src={wishlistIcon} alt="wishlist" />
-            <Image src={cartIcon} alt="cart" />
+            <Image src={"/images/icon/wishlist.svg"} alt="wishlist" width={30} height={30} />
+            <Image src={"/images/icons/cart.svg"} alt="cart" width={30} height={30} />
           </div>
         </div>
       </div>
 
       <div className="lg:hidden px-10 py-4 flex justify-between items-center">
         <Link href="/">
-          <Image src={logo} alt="Logo" />
+          <Image src={"/images/logo/logo.svg"} alt="Logo" width={30} height={30}/>
         </Link>
         <div className="flex gap-6">
-          <Image src={wishlistIcon} alt="wishlist" />
-          <Image src={cartIcon} alt="cart" />
+          <Image src={"/images/icons/wishlist.svg"} alt="wishlist" width={30} height={30}/>
+          <Image src={"/images/icons/cart.svg"} alt="cart" width={30} height={30} />
           <Link href="#" onClick={toggleMenu}>
-            <Image src={menuIcon} width={30} height={30} alt="Menu" />
+            <Image src={"/images/icons/menu.svg"} width={30} height={30} alt="Menu" />
           </Link>
         </div>
       </div>
@@ -111,13 +105,13 @@ const Header = () => {
           }`}
         >
           <div className="flex justify-between items-center">
-            <Image src={logo} alt="Logo" />
+            <Image src={"/images/logo/logo.svg"} alt="Logo" />
             <Link href="#" onClick={toggleMenu}>
-              <Image src={crossIcon} width={30} height={30} alt="Close" />
+              <Image src={"/images/icons/cross.svg"} width={30} height={30} alt="Close" />
             </Link>
           </div>
           <div className="flex px-4 py-3 mt-6 rounded-full w-[96%] bg-light-gray">
-            <Image src={searchIcon} alt="search" />
+            <Image src={"/images/icons/search.svg"} alt="search" width={30} height={30} />
             <input
               className="pl-4 focus-visible:outline-none w-[64%] bg-light-gray"
               type="text"

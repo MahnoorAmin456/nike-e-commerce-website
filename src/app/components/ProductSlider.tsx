@@ -2,8 +2,6 @@
 import React, {useRef} from 'react';
 import Slider from "react-slick";
 import { nikeProducts } from './Cards/data'; 
-import arrowRightIcon from "@public/images/icons/right-arrow.svg";
-import arrowLeftIcon from "@public/images/icons/left-arrow.svg";
 import Card from './Cards/Card';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -53,10 +51,10 @@ const ProductSlider = () => {
           <div className="flex items-center gap-4">
             <p>Shop</p>
             <div className="bg-[#F5F5F5] px-5 py-4 rounded-full cursor-pointer" onClick={() => sliderRef.current?.slickPrev()}>
-              <Image src={arrowLeftIcon} alt="Arrow Left"/>
+              <Image src={"/images/icons/left-arrow.svg"} alt="Arrow Left"/>
             </div>
             <div className="bg-[#E5E5E5] px-5 py-4 rounded-full cursor-pointer" onClick={() => sliderRef.current?.slickNext()}>
-              <Image src={arrowRightIcon} alt="Arrow Right"/>
+              <Image src={"/images/icons/right-arrow.svg"} alt="Arrow Right"/>
             </div>
           </div>
         </div>
